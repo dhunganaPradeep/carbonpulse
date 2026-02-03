@@ -1,0 +1,151 @@
+.
+├── backend
+│   ├── alembic
+│   │   ├── env.py
+│   │   ├── script.py.mako
+│   │   └── versions
+│   │       ├── 0001_initial_schema.py
+│   │       ├── 0002_emission_facility_energy_source.py
+│   │       ├── 386cd16489be_add_task_table.py
+│   │       └── __pycache__
+│   │           └── 0001_initial_schema.cpython-314.pyc
+│   ├── alembic.ini
+│   ├── app
+│   │   ├── api
+│   │   │   ├── deps.py
+│   │   │   ├── __init__.py
+│   │   │   └── v1
+│   │   │       ├── admin.py
+│   │   │       ├── auth.py
+│   │   │       ├── emissions.py
+│   │   │       ├── forecast.py
+│   │   │       ├── health.py
+│   │   │       ├── __init__.py
+│   │   │       ├── regulatory.py
+│   │   │       ├── simulator.py
+│   │   │       ├── tasks.py
+│   │   │       └── ws.py
+│   │   ├── core
+│   │   │   ├── config.py
+│   │   │   ├── __init__.py
+│   │   │   ├── jwt.py
+│   │   │   ├── logging.py
+│   │   │   ├── middleware.py
+│   │   │   ├── rate_limit.py
+│   │   │   ├── redis_client.py
+│   │   │   ├── security.py
+│   │   │   └── ws_manager.py
+│   │   ├── data
+│   │   │   ├── __init__.py
+│   │   │   └── synthetic_generator.py
+│   │   ├── db
+│   │   │   ├── base.py
+│   │   │   ├── __init__.py
+│   │   │   ├── models
+│   │   │   │   ├── audit.py
+│   │   │   │   ├── emission_record.py
+│   │   │   │   ├── enums.py
+│   │   │   │   ├── forecast.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── organisation.py
+│   │   │   │   ├── regulatory.py
+│   │   │   │   ├── simulation.py
+│   │   │   │   ├── supplier.py
+│   │   │   │   ├── task.py
+│   │   │   │   └── user.py
+│   │   │   ├── seed.py
+│   │   │   └── session.py
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── schemas
+│   │   │   ├── admin.py
+│   │   │   ├── auth.py
+│   │   │   ├── emissions.py
+│   │   │   ├── forecast.py
+│   │   │   ├── __init__.py
+│   │   │   ├── regulatory.py
+│   │   │   ├── simulator.py
+│   │   │   └── tasks.py
+│   │   └── services
+│   │       ├── admin_service.py
+│   │       ├── auth_service.py
+│   │       ├── emission_service.py
+│   │       ├── forecast_engine.py
+│   │       ├── forecast_service.py
+│   │       ├── __init__.py
+│   │       ├── regulatory_service.py
+│   │       ├── simulator_service.py
+│   │       └── task_service.py
+│   ├── app.db
+│   ├── Dockerfile
+│   ├── pyproject.toml
+│   ├── requirements.txt
+│   └── tests
+│       ├── conftest.py
+│       ├── __init__.py
+│       ├── test_admin_integration.py
+│       ├── test_emissions_breakdown_integration.py
+│       ├── test_emissions_integration.py
+│       ├── test_health_integration.py
+│       ├── test_health.py
+│       ├── test_rbac_unit.py
+│       ├── test_regulatory_unit.py
+│       ├── test_security_unit.py
+│       ├── test_seed_enrichment_unit.py
+│       ├── test_simulator_unit.py
+│       └── test_synthetic_generator_unit.py
+├── data
+│   └── synthetic
+│       └── __init__.py
+├── docker-compose.dev.yml
+├── docker-compose.yml
+├── frontend
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── src
+│   │   ├── api
+│   │   │   ├── client.ts
+│   │   │   └── services.ts
+│   │   ├── App.tsx
+│   │   ├── components
+│   │   │   ├── BreakdownBarChart.tsx
+│   │   │   ├── EmissionsChart.tsx
+│   │   │   ├── ForecastChart.tsx
+│   │   │   ├── InfoCard.tsx
+│   │   │   ├── Layout.tsx
+│   │   │   ├── ProtectedRoute.tsx
+│   │   │   ├── RegulatoryHealthCard.tsx
+│   │   │   ├── RoleBadge.tsx
+│   │   │   ├── ScopeBreakdownChart.tsx
+│   │   │   └── StatCard.tsx
+│   │   ├── index.css
+│   │   ├── lib
+│   │   │   └── permissions.ts
+│   │   ├── main.tsx
+│   │   ├── pages
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── Emissions.tsx
+│   │   │   ├── Forecast.tsx
+│   │   │   ├── Login.tsx
+│   │   │   ├── Regulatory.tsx
+│   │   │   ├── Settings.tsx
+│   │   │   ├── Simulator.tsx
+│   │   │   └── Tasks.tsx
+│   │   ├── store
+│   │   │   ├── authStore.ts
+│   │   │   ├── dashboardStore.ts
+│   │   │   ├── settingsStore.ts
+│   │   │   └── simulatorStore.ts
+│   │   ├── types
+│   │   │   └── index.ts
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   └── vite.config.ts
+├── output.png
+├── README.md
+└── repo_structure.txt
+
+25 directories, 124 files
